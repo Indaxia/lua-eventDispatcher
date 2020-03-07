@@ -6,7 +6,7 @@ Lua eventDispatcher
 
 ### *OR* use [WLPM](https://github.com/Indaxia/wc3-wlpm-module-manager) and import("eventDispatcher")
 ```
-wlpm install https://github.com/Indaxia/wlpm-wc3-demo-hello
+wlpm install https://github.com/Indaxia/lua-eventDispatcher
 ```
 
 ## Usage
