@@ -14,6 +14,7 @@ wlpm install https://github.com/Indaxia/wlpm-wc3-demo-hello
 ```lua
 
 -- subscription on the event
+-- The event param is an object with "data", "name" and "stopPropagation" properties
 eventDispatcher.on("my.event.a", function(event)
     print("Callback A 1: " .. event.data)
 end)
