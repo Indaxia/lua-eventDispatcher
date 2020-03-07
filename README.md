@@ -13,15 +13,16 @@ wlpm install https://github.com/Indaxia/wlpm-wc3-demo-hello
 
 ```lua
 
--- subscription on the event
+-- Subscription on the event
 -- The event param is an object with "data", "name" and "stopPropagation" properties
+-- You can set event.stopPropagation = true inside the callback to break current dispatch loop
 eventDispatcher.on("my.event.a", function(event)
     print("Callback A 1: " .. event.data)
 end)
 
 -- ... another file ...
 
--- dispatch with any data  
+-- Dispatch with any data  
 eventDispatcher.dispatch("my.event.a", "Dispatch A 1 Data")
 
 ```
