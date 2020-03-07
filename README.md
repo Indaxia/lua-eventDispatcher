@@ -4,7 +4,7 @@ Lua eventDispatcher
 
 ### Copy code from /src and use eventDispatcher global
 
-### *OR* use [WLPM](https://github.com/Indaxia/wc3-wlpm-module-manager) and import
+### *OR* use [WLPM](https://github.com/Indaxia/wc3-wlpm-module-manager) and import("eventDispatcher")
 ```
 wlpm install https://github.com/Indaxia/wlpm-wc3-demo-hello
 ```
