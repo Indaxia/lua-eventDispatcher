@@ -28,3 +28,4 @@ eventDispatcher.dispatch("my.event.a", "Dispatch A 1 Data")
 ```
 
 See [test file](/test/test.lua) for details
+[See on XGM/Russian](https://xgm.guru/p/wc3/lua-eventdispatcher)
