@@ -2,7 +2,7 @@ Lua eventDispatcher
 
 ## Installation
 
-### Copy code from /src and use eventDispatcher global
+### Copy code from [/src](/src) and use eventDispatcher global
 
 ### *OR* use [WLPM](https://github.com/Indaxia/wc3-wlpm-module-manager) and import("eventDispatcher")
 ```
