@@ -1,7 +1,8 @@
 Lua eventDispatcher
 
 Event Dispatcher implemented in Lua. It can work in the normal object mode or in the WLPM module mode (detected automatically).
-Is one of the fundamental modules when building achitecture application. Solves the problem of [high сohesion](https://en.wikipedia.org/wiki/GRASP_%28object-oriented_design%29). It is based on the observer pattern.
+One of the fundamental modules when building achitecture application.
+Solves the [high сohesion](https://en.wikipedia.org/wiki/GRASP_%28object-oriented_design%29) problem. Based on the observer pattern.
 
 ## Installation
 
