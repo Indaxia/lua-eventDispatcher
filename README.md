@@ -1,8 +1,12 @@
-Lua eventDispatcher 
+Lua eventDispatcher
+
+Event Dispatcher implemented in Lua. It can work in the normal object mode or in the WLPM module mode (detected automatically).
+One of the fundamental modules when building achitecture application.
+Solves the [high сohesion](https://en.wikipedia.org/wiki/GRASP_%28object-oriented_design%29) problem. Based on the observer pattern.
 
 ## Installation
 
-### Copy code from /src and use eventDispatcher global
+### Copy code from [/src](/src) and use eventDispatcher global
 
 ### *OR* use [WLPM](https://github.com/Indaxia/wc3-wlpm-module-manager) and import("eventDispatcher")
 ```
