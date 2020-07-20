@@ -9,6 +9,8 @@ WM("eventDispatcher", function(import, export, exportDefault)
     -- The event param is an object with "data", "name" and "stopPropagation" properties
     -- You can set event.stopPropagation = true inside the callback
     -- to break current dispatch loop
+    --- @param eventName string
+    --- @param callback function
     on = function(eventName, callback)
       if(handlers[eventName] == nil) then
         handlers[eventName] = {}
@@ -17,6 +19,8 @@ WM("eventDispatcher", function(import, export, exportDefault)
     end,
 
     -- Unsubscribe from the event. Specify the same function ref from on() to avoid every subscription removal
+    --- @param eventName string
+    --- @param specialCallback function
     off = function(eventName, specialCallback)
       local callbacks = handlers[eventName]
       if(callbacks ~= nil) then
@@ -34,6 +38,8 @@ WM("eventDispatcher", function(import, export, exportDefault)
     end,
 
     -- Dispatch the event and pass a data to it (optional)
+    --- @param eventName string
+    --- @param data 
     dispatch = function(eventName, data)
       local callbacks = handlers[eventName]
       local event = {
