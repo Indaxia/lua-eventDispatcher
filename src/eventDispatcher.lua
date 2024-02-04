@@ -51,7 +51,7 @@ WM("eventDispatcher", function(import, export, exportDefault)
       if(callbacks == nil) then
         return
       end
-      for i,callback in pairs(callbacks) do
+      for i,callback in ipairs(callbacks) do
         callback(event)
         if(event.stopPropagation) then
           return
