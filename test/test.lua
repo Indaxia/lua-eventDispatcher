@@ -1,5 +1,5 @@
-WM("eventDispatcherTest", function(import, export, exportDefault)
-  local eventDispatcher = import "eventDispatcher"
+EventDispatcherTest = Imp.export("EventDispatcherTest", function()
+  local eventDispatcher = Imp.import(EventDispatcher)
 
   -- subscription 1
   eventDispatcher.on("my.event.a", function(event)
@@ -40,4 +40,6 @@ WM("eventDispatcherTest", function(import, export, exportDefault)
   -- unsubscribe from the event
   eventDispatcher.off("my.event.b")
   eventDispatcher.dispatch("my.event.b", "Nothing is subscribed to this") 
+
+  return {}
 end)
