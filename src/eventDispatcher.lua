@@ -1,5 +1,5 @@
 -- Warcraft 3 eventDispatcher module by ScorpioT1000 / 2020
-eventDispatcher = Imp.export("eventDispatcher", function()
+EventDispatcher = Imp.export("EventDispatcher", function()
   local handlers = {}
 
   return {
