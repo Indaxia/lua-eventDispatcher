@@ -1,10 +1,8 @@
-if(_G["WM"] == nil) then WM = (function(m,h) h(nil,(function() end), (function(e) _G[m] = e end)) end) end -- WLPM MM fallback
-
 -- Warcraft 3 eventDispatcher module by ScorpioT1000 / 2020
-WM("eventDispatcher", function(import, export, exportDefault)
+eventDispatcher = Imp.export("eventDispatcher", function()
   local handlers = {}
 
-  exportDefault({
+  return {
     -- Subscribe to an event with the callback function that takes an event param 
     -- The event param is an object with "data", "name" and "stopPropagation" properties
     -- You can set event.stopPropagation = true inside the callback
@@ -63,5 +61,5 @@ WM("eventDispatcher", function(import, export, exportDefault)
     clear = function()
       handlers = {}
     end
-  })
+  }
 end)
